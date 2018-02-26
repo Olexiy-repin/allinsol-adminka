@@ -1,0 +1,70 @@
+#header {
+  background-color: #1d1d1d;
+  padding-top: .9rem;
+  padding-bottom: .7rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-soll {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-soll__svg {
+  width: 1.6rem;
+  height: 2.1rem;
+  fill: #2adfbb;
+}
+
+.logo-description {
+  font-family: GothaB;
+  font-size: pxToRem(12px);
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: #2adfbb;
+  margin-left: .9rem;
+}
+
+.header__exit {
+  display: flex;
+  align-items: center;
+}
+
+.exit-description {
+  font-family: GothaB;
+  font-size: pxToRem(14px);
+  text-transform: uppercase;
+  margin-right: .7rem;
+  color: #fff;
+}
+
+.logo-exit__svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .logo-soll__svg {
+    width: 3.7rem;
+    height: 3.2rem;
+  }
+
+  .logo-description {
+    font-size: pxToRem(14px);
+    margin-left: .6rem;
+  }
+
+  .header__exit {
+    padding-right: .6rem;
+  }
+}

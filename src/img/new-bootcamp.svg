@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="plus_icon" viewBox="0 0 32 32">
+<title>plus_icon</title>
+<path d="M18.861 18.861h12.595c0.286-0.017 0.512-0.254 0.512-0.543 0-0 0-0.001 0-0.001v0-4.635c0-0.3-0.243-0.543-0.543-0.543h-12.563v-12.595c-0.016-0.293-0.25-0.527-0.542-0.543l-0.002-0h-4.635c-0.3 0-0.543 0.243-0.543 0.543v0 12.595h-12.595c-0.3 0-0.543 0.243-0.543 0.543v0 4.635c0 0.3 0.243 0.543 0.543 0.543v0h12.595v12.595c0 0.3 0.243 0.543 0.543 0.543v0h4.635c0.3 0 0.543-0.243 0.543-0.543v0z"></path>
+</symbol>
+<symbol id="add_new_bootcamp_icon" viewBox="0 0 32 32">
+<title>add_new_bootcamp_icon</title>
+<path fill="#5cc2ad" style="fill: var(--color1, #5cc2ad)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16v0c0-8.837 7.163-16 16-16v0z"></path>
+<path fill="#282828" style="fill: var(--color2, #282828)" d="M8.727 14.545h5.818v-5.818h2.909v5.818h5.818v2.909h-5.818v5.818h-2.909v-5.818h-5.818z"></path>
+</symbol>
+</defs>
+</svg>
