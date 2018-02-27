@@ -17,7 +17,7 @@ gulp.task('html', function(){
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/'))
       .pipe(browserSync.reload({
         stream: true
       }));
@@ -48,7 +48,7 @@ gulp.task('css', function(){
       log: true
     }))
     .pipe(cssnano())
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/'))
       .pipe(browserSync.reload({
         stream: true
       }));
@@ -58,7 +58,7 @@ gulp.task('css', function(){
 gulp.task('js', function(){
   return gulp.src('./src/penalty_page/js/*.js')
   .pipe(uglify())
-  .pipe(gulp.dest('./dist/js/'))
+  .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.reload({
       stream: true
     }));
@@ -93,7 +93,7 @@ gulp.task('fonts', function(){
 // TASK FOR WATCH
 gulp.task('watch', function(){
   gulp.watch('./src/penalty_page/html/**/*.html', ['html']);
-  // gulp.watch('./src/penalty_page/html/**/*.html', ['html-suc']);
+  // gulp.watch('./src/**/html/**/*.html', ['html-suc']);
   gulp.watch('./src/penalty_page/sass/**/*.scss', ['css']);
   gulp.watch('./src/penalty_page/js/**/*.js', ['js']);
   gulp.watch('./src/penalty_page/img/**/*.*', ['img']);

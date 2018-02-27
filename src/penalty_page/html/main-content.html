@@ -42,7 +42,7 @@
         <a href="#" class="trigger-btn">Штрафы</a>
       </div>
       <div class="sec-11__slider response-slider owl-carousel" id="mobile-slider">
-      <div class="slides">
+      <div class="slides" data-hash="zero">
         <div class="slides__content-container">
           <picture class="slides__picture">
             <source srcset="img/content/1-md.png" media="(min-width: 768px)">
@@ -56,7 +56,7 @@
         </div>
       </div>
 
-      <div class="slides">
+      <div class="slides" data-hash="one">
         <div class="slides__content-container">
           <picture class="slides__picture">
             <source srcset="img/content/1-md.png" media="(min-width: 768px)">
@@ -70,7 +70,7 @@
         </div>
       </div>
 
-      <div class="slides">
+      <div class="slides" data-hash="two">
         <div class="slides__content-container">
           <picture class="slides__picture">
             <source srcset="img/content/1-md.png" media="(min-width: 768px)">
@@ -84,7 +84,7 @@
         </div>
       </div>
 
-      <div class="slides">
+      <div class="slides" data-hash="three">
         <div class="slides__content-container">
           <picture class="slides__picture">
             <source srcset="img/content/1-md.png" media="(min-width: 768px)">
@@ -101,7 +101,12 @@
     <div class="check-container">
       <div class="check-container__violation">
         <span class="check-container__violation-span">нарушение правила</span>
-        <p class="check-container__violation-rule">Пользование <br> моб. телефоном</p>
+        <!-- <p class="check-container__violation-rule">Пользование <br> моб. телефоном</p> -->
+        <select class="mobile-select" name="mobile-select" id="">
+          <option class="mobile-select__option" value="0">Без нарушений</option>
+          <option class="mobile-select__option" value="1">Пользование моб. телефоном</optio>
+          <option class="mobile-select__option" value="2">Другое нарушение</option>
+        </select>
       </div>
       <label class="check-container__label">
         Опоздание в минутах
@@ -114,20 +119,95 @@
     </div>
     <div class="desctop-check-contaienr">
       <div class="desctop-check-name">
+        <p class="desctop-check-description">#</p>
+        <p class="desctop-check-description">фото</p>
+        <p class="desctop-check-description">имя</p>
         <p class="desctop-check-description">нарушение правила</p>
         <p class="desctop-check-description">опоздание <br> в минутах</p>
         <p class="desctop-check-description">итог</p>
       </div>
       <div class="desctop-input-container">
-        <div class="check-container__violation">
-          <p class="check-container__violation-rule">Пользование моб. телефоном</p>
+        <div class="desctop-input-card">
+          <p class="slides__content-count"></p>
+          <picture class="slides__picture">
+            <source srcset="img/content/1-md.png" media="(min-width: 768px)">
+              <source srcset="img/content/1-sm.png" media="(min-width: 320px)">
+                <img class="sec-11__img" src="img/content/1-sm.png" alt="There must be an image">
+              </picture>
+              <p class="slides__content-name">Александр К.</p>
+          <div class="check-container__violation">
+            <!-- <p class="check-container__violation-rule">Пользование моб. телефоном</p> -->
+            <select class="desctop-select" name="desctop-select" id="">
+              <option value="0">Без нарушений</option>
+              <option value="1">Пользование моб. телефоном</optio>
+              <option value="2">Другое нарушение</option>
+            </select>
+          </div>
+          <label class="check-container__label">
+            <input class="check-container__input-text" type="text" value="4">
+          </label>
+          <label class="check-container__label">
+            <p class="check-container__sum">120</p>
+          </label>
         </div>
-        <label class="check-container__label">
-          <input class="check-container__input-text" type="text" value="4">
-        </label>
-        <label class="check-container__label">
-          <p class="check-container__sum">120</p>
-        </label>
+
+        <div class="desctop-input-card">
+          <p class="slides__content-count"></p>
+          <picture class="slides__picture">
+            <source srcset="img/content/1-md.png" media="(min-width: 768px)">
+              <source srcset="img/content/1-sm.png" media="(min-width: 320px)">
+                <img class="sec-11__img" src="img/content/1-sm.png" alt="There must be an image">
+              </picture>
+              <p class="slides__content-name">Александр К.</p>
+          <div class="check-container__violation">
+            <p class="check-container__violation-rule">Без нарушений</p>
+          </div>
+          <label class="check-container__label">
+            <input class="check-container__input-text" type="text" value="4">
+          </label>
+          <label class="check-container__label">
+            <p class="check-container__sum">120</p>
+          </label>
+        </div>
+
+        <div class="desctop-input-card">
+          <p class="slides__content-count"></p>
+          <picture class="slides__picture">
+            <source srcset="img/content/1-md.png" media="(min-width: 768px)">
+              <source srcset="img/content/1-sm.png" media="(min-width: 320px)">
+                <img class="sec-11__img" src="img/content/1-sm.png" alt="There must be an image">
+              </picture>
+              <p class="slides__content-name">Александр К.</p>
+          <div class="check-container__violation">
+            <p class="check-container__violation-rule">Без нарушений</p>
+          </div>
+          <label class="check-container__label">
+            <input class="check-container__input-text" type="text" value="4">
+          </label>
+          <label class="check-container__label">
+            <p class="check-container__sum">120</p>
+          </label>
+        </div>
+
+        <div class="desctop-input-card">
+          <p class="slides__content-count"></p>
+          <picture class="slides__picture">
+            <source srcset="img/content/1-md.png" media="(min-width: 768px)">
+              <source srcset="img/content/1-sm.png" media="(min-width: 320px)">
+                <img class="sec-11__img" src="img/content/1-sm.png" alt="There must be an image">
+              </picture>
+              <p class="slides__content-name">Александр К.</p>
+          <div class="check-container__violation">
+            <p class="check-container__violation-rule">Без нарушений</p>
+          </div>
+          <label class="check-container__label">
+            <input class="check-container__input-text" type="text" value="4">
+          </label>
+          <label class="check-container__label">
+            <p class="check-container__sum">120</p>
+          </label>
+        </div>
+
       </div>
     </div>
 

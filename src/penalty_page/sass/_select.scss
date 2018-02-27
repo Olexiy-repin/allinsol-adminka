@@ -1,0 +1,63 @@
+// .selectric-wrapper {
+//   width: 300px;
+//   margin: auto;
+// }
+
+.selectric {
+  background-color: #282828;
+  border: none;
+  border-bottom: 2px solid rgb(42, 223, 187);
+  outline: none;
+  .button {
+    width: 10px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    top: 50%;
+  }
+  .label {
+    font-family: GothaR;
+    font-size: pxToRem(16px);
+    margin-left: 0;
+    color: #fff;
+  }
+}
+
+select {
+  
+}
+
+.mobile-select__option {
+  background-color: #282828;
+  color: #fff;
+}
+
+.selectric-focus .selectric {
+  border-bottom: 2px solid rgb(42, 223, 187);
+}
+
+.selectric-hover .selectric {
+  border-bottom: 2px solid rgb(42, 223, 187);
+}
+
+.selectric-open .selectric {
+  border-bottom: 2px solid rgb(42, 223, 187);
+}
+
+.selectric-items {
+  border: 1px solid #373737;
+}
+
+.selectric-items li {
+  font-family: GothaR;
+  font-size: pxToRem(16px);
+  background-color: #282828;
+  color: #fff;
+  &:hover {
+    background-color: #242424;
+  }
+}
+
+.selectric-items li.highlighted {
+  background-color: #242424;
+  color: #2adfbb;
+}
