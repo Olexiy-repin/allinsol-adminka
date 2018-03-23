@@ -1,20 +1,20 @@
 <div id="main-content">
   <aside class="left-aside">
     <div class="aside-icon-container">
-      <a href="#" class="aside-icon">
-        <svg class="aside-icon__svg active-left-panel">
+      <a href="../main_page/index.html" class="aside-icon">
+        <svg class="aside-icon__svg">
           <use xlink:href="img/aside/aside.svg#icon-add"></use>
         </svg>
       </a>
-      <span class="aside-icon__description active-left-panel">создание потока</span>
+      <a href="../main_page/index.html" class="aside-icon__description">создание потока</a>
     </div>
     <div class="aside-icon-container">
       <a href="#" class="aside-icon">
-        <svg class="aside-icon__svg">
+        <svg class="aside-icon__svg active-left-panel">
           <use xlink:href="img/aside/aside.svg#info_icon"></use>
         </svg>
       </a>
-      <span class="aside-icon__description">данные за день</span>
+      <a href="index.html" class="aside-icon__description active-left-panel">данные за день</a>
     </div>
   </aside>
   <div class="content">
@@ -22,23 +22,43 @@
       <div class="select-block">
         <div class="select-container">
           <p class="select-container__label">выбор потока:</p>
-          <p class="select-container__option">Bootcamp 1</p>
+          <!-- <p class="select-container__option">Bootcamp 1</p> -->
+          <select name="desctop-select" id="">
+            <option value="0">Bootcamp 1</option>
+            <option value="1">Bootcamp 2</optio>
+            <option value="2">Bootcamp 3</option>
+          </select>
         </div>
         <div class="select-container">
           <p class="select-container__label">выбор дня:</p>
-          <p class="select-container__option">День #1</p>
+          <!-- <p class="select-container__option">День #1</p> -->
+          <select name="desctop-select" id="">
+            <option value="0">День #1</option>
+            <option value="1">День #2</optio>
+            <option value="2">День #3</option>
+          </select>
         </div>
         <div class="select-container">
           <p class="select-container__label">спикер:</p>
-          <p class="select-container__option">Юнона Лотоцкая</p>
+          <!-- <p class="select-container__option">Юнона Лотоцкая</p> -->
+          <select name="desctop-select" id="">
+            <option value="0">Юнона Лотоцкая</option>
+            <option value="1">Юнона Лотоцкая</optio>
+            <option value="2">Юнона Лотоцкая</option>
+          </select>
         </div>
         <div class="select-container">
           <p class="select-container__label">тема:</p>
-          <p class="select-container__option">EQ, стратегия,  внедрение, лична...</p>
+          <!-- <p class="select-container__option">EQ, стратегия,  внедрение, лична...</p> -->
+          <select name="desctop-select" id="">
+            <option value="0">EQ, стратегия,  внедрение, лична...</option>
+            <option value="1">EQ, стратегия,  внедрение, лична...</optio>
+            <option value="2">EQ, стратегия,  внедрение, лична...</option>
+          </select>
         </div>
       </div>
       <div class="trigger-container">
-        <a href="#" class="trigger-btn">Баллы</a>
+        <a href="../score_page/index.html" class="trigger-btn">Баллы</a>
         <a href="#" class="trigger-btn">Штрафы</a>
       </div>
       <div class="sec-11__slider response-slider owl-carousel" id="mobile-slider">
@@ -102,8 +122,8 @@
       <div class="check-container__violation">
         <span class="check-container__violation-span">нарушение правила</span>
         <!-- <p class="check-container__violation-rule">Пользование <br> моб. телефоном</p> -->
-        <select class="mobile-select" name="mobile-select" id="">
-          <option class="mobile-select__option" value="0">Без нарушений</option>
+        <select name="mobile-select" id="">
+          <option class="mobile-select__option" value="0">Пользование моб. телефоном</option>
           <option class="mobile-select__option" value="1">Пользование моб. телефоном</optio>
           <option class="mobile-select__option" value="2">Другое нарушение</option>
         </select>
@@ -160,7 +180,12 @@
               </picture>
               <p class="slides__content-name">Александр К.</p>
           <div class="check-container__violation">
-            <p class="check-container__violation-rule">Без нарушений</p>
+            <!-- <p class="check-container__violation-rule">Без нарушений</p> -->
+            <select class="desctop-select" name="desctop-select" id="">
+              <option value="0">Без нарушений</option>
+              <option value="1">Пользование моб. телефоном</optio>
+              <option value="2">Другое нарушение</option>
+            </select>
           </div>
           <label class="check-container__label">
             <input class="check-container__input-text" type="text" value="4">
@@ -179,7 +204,12 @@
               </picture>
               <p class="slides__content-name">Александр К.</p>
           <div class="check-container__violation">
-            <p class="check-container__violation-rule">Без нарушений</p>
+            <!-- <p class="check-container__violation-rule">Без нарушений</p> -->
+            <select class="desctop-select" name="desctop-select" id="">
+              <option value="0">Без нарушений</option>
+              <option value="1">Пользование моб. телефоном</optio>
+              <option value="2">Другое нарушение</option>
+            </select>
           </div>
           <label class="check-container__label">
             <input class="check-container__input-text" type="text" value="4">
@@ -198,7 +228,12 @@
               </picture>
               <p class="slides__content-name">Александр К.</p>
           <div class="check-container__violation">
-            <p class="check-container__violation-rule">Без нарушений</p>
+            <!-- <p class="check-container__violation-rule">Без нарушений</p> -->
+            <select class="desctop-select" name="desctop-select" id="">
+              <option value="0">Без нарушений</option>
+              <option value="1">Пользование моб. телефоном</optio>
+              <option value="2">Другое нарушение</option>
+            </select>
           </div>
           <label class="check-container__label">
             <input class="check-container__input-text" type="text" value="4">

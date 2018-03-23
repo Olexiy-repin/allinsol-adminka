@@ -11,11 +11,17 @@
 .owl-next {
   position: absolute;
   top: 1.7rem;
-  right: 1rem;
+  right: .4rem;
 }
 
 .sec-10__svg-img {
   width: .7rem;
   height: .7rem;
   fill: #696969;
+}
+
+@media (min-width: 1024px) {
+  .owl-next {
+    right: 1rem;
+  }
 }

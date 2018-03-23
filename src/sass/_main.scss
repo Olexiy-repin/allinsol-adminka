@@ -1,0 +1,20 @@
+$baseFontSize: 16px;
+
+@function pxToRem($val) {
+  $remSize: $val/$baseFontSize;
+  @return #{$remSize}rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  counter-reset: participiant desc_participiant;
+}
+
+.container--width {
+  min-width: pxToRem(320px);
+}

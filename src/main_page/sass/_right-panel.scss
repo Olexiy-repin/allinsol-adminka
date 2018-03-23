@@ -7,6 +7,7 @@
   padding-top: 1.1rem;
   background-color: #242424;
   min-height: calc(100vh - 63.17px);
+  z-index: 1;
 }
 
 .right-panel__header {
@@ -335,7 +336,7 @@
     min-height: 1102.8px;
     order: 2;
     position: relative;
-    display: block;
+    display: block !important;
     width: 30.4%;
     top: 0;
   }

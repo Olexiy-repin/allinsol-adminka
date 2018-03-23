@@ -24,7 +24,7 @@ gulp.task('html', function(){
 });
 
 // gulp.task('html-suc', function(){
-//   return gulp.src('./src/html/success.html')
+//   return gulp.src('./src/penalty_page/html/success.html')
 //     .pipe(htmlmin({
 //       collapseWhitespace: true
 //     }))
@@ -93,7 +93,7 @@ gulp.task('fonts', function(){
 // TASK FOR WATCH
 gulp.task('watch', function(){
   gulp.watch('./src/penalty_page/html/**/*.html', ['html']);
-  // gulp.watch('./src/**/html/**/*.html', ['html-suc']);
+  // gulp.watch('./src/penalty_page/**/html/**/*.html', ['html-suc']);
   gulp.watch('./src/penalty_page/sass/**/*.scss', ['css']);
   gulp.watch('./src/penalty_page/js/**/*.js', ['js']);
   gulp.watch('./src/penalty_page/img/**/*.*', ['img']);

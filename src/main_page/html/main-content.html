@@ -9,37 +9,53 @@
       <span class="aside-icon__description active-left-panel">создание потока</span>
     </div>
     <div class="aside-icon-container">
-      <a href="#" class="aside-icon">
+      <a href="../score_page/index.html" class="aside-icon">
         <svg class="aside-icon__svg">
           <use xlink:href="img/aside/aside.svg#info_icon"></use>
         </svg>
       </a>
-      <span class="aside-icon__description">данные за день</span>
+      <a href="../score_page/index.html" class="aside-icon__description">данные за день</a>
     </div>
   </aside>
   <div class="content">
     <div class="header-content">
       <div class="bootcamp-name">
-        <a href="#" class="menu-icon">
-          <svg class="menu-icon__svg">
+        <div class="menu-icon menu-icon__more">
+          <svg class="menu-icon__svg menu-icon__svg-more">
             <use xlink:href="img/content-header/content-header.svg#menu_icon"></use>
           </svg>
-        </a>
-        <a href="#" class="menu-icon">
-          <p class="menu-paragraph">Bootcamp 1</p>
-          <svg class="menu-icon__svg">
+          <div class="menu__popup">
+            <a href="#" class="menu-icon">
+              <svg class="menu-icon__svg menu-icon__svg-more">
+                <use xlink:href="img/content-header/content-header.svg#menu_icon"></use>
+              </svg>
+            </a>
+            <div class="menu__popup-right-content">
+              <a href="#changeBootName" class="menu__popup-text popup-with-form">Изменить название</a>
+              <a href="#deleteBootName" class="menu__popup-text popup-with-form">Удалить буткемп</a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="menu-icon"> -->
+          <!-- <p class="menu-paragraph">Bootcamp 1</p> -->
+          <!-- <svg class="menu-icon__svg">
             <use xlink:href="img/content-header/content-header.svg#drop_icon"></use>
-          </svg>
-        </a>
+          </svg> -->
+          <select name="desctop-select" id="">
+            <option value="0">Bootcamp 1</option>
+            <option value="1">Bootcamp 2</optio>
+            <option value="2">Bootcamp 3</option>
+          </select>
+        <!-- </a> -->
       </div>
-      <div class="create-bootcamp">
+      <a href="#newBoot" class="create-bootcamp popup-with-form">
         <i class="create-button">
           <svg class="create__svg">
             <use xlink:href="img/new-bootcamp.svg#add_new_bootcamp_icon"></use>
           </svg>
         </i>
         <p class="create-bootcamp__description">новый буткемп</p>
-      </div>
+      </a>
     </div>
     <div class="participiants">
       <div class="participiats__cards-container">
@@ -153,6 +169,58 @@
         </i>
         <p class="add-bootcamp__description">добавить нового участника</p>
       </div>
+    </div>
+  </div>
+</div>
+<div id="newBoot" class="white-popup mfp-hide">
+  <div class="modal-content">
+    <!-- <h2 class="modal-title">получить <br> бесплатную диагностику</h2> -->
+    <div class="form-container">
+      <form class="registration sec-07__form" action="#" method="post" id="modal-form">
+        <p class="new-boot__title">Добавить новый буткемп</p>
+        <div class="new-boot__content-container">
+          <label class="new-boot__label">название буткемпа
+              <input class="new-boot__input" type="text" name="boot-name" id="modal-form-name" required>
+            </label>
+          <div class="new-boot__btn-container">
+            <input class="new-boot__btn" type="submit" name="" value="сохранить">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="changeBootName" class="white-popup mfp-hide">
+  <div class="modal-content">
+    <div class="form-container">
+      <form class="registration sec-07__form" action="#" method="post" id="modal-form">
+        <p class="new-boot__title">Изменить название буткемпа</p>
+        <div class="new-boot__content-container">
+          <label class="new-boot__label">название буткемпа
+              <input class="new-boot__input" type="text" name="boot-name" id="modal-form-name" required>
+            </label>
+          <div class="new-boot__btn-container">
+            <input class="new-boot__btn" type="submit" name="" value="сохранить">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="deleteBootName" class="white-popup mfp-hide">
+  <div class="modal-content">
+    <div class="form-container">
+      <form class="registration sec-07__form" action="#" method="post" id="modal-form">
+        <p class="del-boot__title"></p>
+        <div class="new-boot__content-container">
+          <div class="new-boot__btn-container">
+            <input class="new-boot__btn" type="submit" name="" value="отмена">
+            <input class="new-boot__btn" type="submit" name="" value="удалить">
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>

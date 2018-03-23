@@ -20,13 +20,13 @@
         768:{
             items:3,
             nav:true,
-            margin: 8,
+            margin: 15,
             center: true,
         },
         1024:{
             items:3,
             nav:true,
-            margin: 5,
+            margin: 15,
             center: true,
         }
     }
@@ -34,5 +34,7 @@
 })();
 
 (() => {
-  $('select').selectric();
+  $('select').selectric({
+    arrowButtonMarkup: '<b style="display: none" class="button"></b>'
+  });
 })();

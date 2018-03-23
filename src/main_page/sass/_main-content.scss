@@ -35,6 +35,10 @@
   }
 }
 
+.aside-icon__description {
+  text-decoration: none;
+}
+
 
 // CONTENT
 .content {
@@ -51,7 +55,7 @@
 
 .bootcamp-name {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.7rem;
 }
@@ -62,11 +66,54 @@
   text-decoration: none;
   width: 19%;
   padding-left: .9rem;
+  position: relative;
   &:last-child {
     display: flex;
     align-items: center;
     width: 81%;
     padding-left: 0;
+  }
+}
+
+.menu-icon.menu-icon__more {
+  cursor: pointer;
+}
+
+.menu__popup {
+  display: none;
+  position: absolute;
+  top: -50%;
+  left: 14%;
+  background-color: rgb(40, 40, 40);
+  outline: 1px solid rgb(51, 51, 51);
+  width: 221px;
+  z-index: 1;
+  padding: .65rem 0 1.1rem .75rem;
+  .menu-icon {
+    width: 14%;
+    padding-left: 0;
+  }
+}
+
+.menu__popup-right-content {
+  padding-top: .3rem;
+}
+
+.menu__popup-text {
+  font-family: GothaR;
+  font-size: pxToRem(14px);
+  font-weight: bold;
+  margin-bottom: 1.1rem;
+  letter-spacing: 1.1px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  &:last-child {
+    margin-bottom: 0;
+    color: rgb(140, 140, 140);
+  }
+  &:hover {
+    color: #fff;
   }
 }
 
@@ -86,6 +133,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+    border: none;
+  }
 }
 
 .create-button {
@@ -191,6 +243,10 @@
     min-height: 1102.8px;
   }
 
+  .menu__popup {
+    left: -47%;
+  }
+
   .participiants {
     display: none;
   }
@@ -213,9 +269,10 @@
   }
 
   .bootcamp-name {
-    width: 50%;
+    width: 35.7%;
     margin-bottom: 0;
     padding-left: 2.4rem;
+    justify-content: space-between;
   }
 
   .menu-icon {
@@ -364,6 +421,10 @@
     padding: 0 1.6rem;
   }
 
+  .menu__popup {
+    left: -42%;
+  }
+
   .logo-soll {
     margin-right: 1.3rem;
   }
@@ -469,6 +530,7 @@
   }
 
   .bootcamp-name {
+    width: 27.1%;
     padding-left: 4.1rem;
   }
 
@@ -480,7 +542,7 @@
   }
 
   .create-bootcamp {
-    width: 24.9%;
+    width: 24.5%;
   }
 
   .create-bootcamp__description {
@@ -556,5 +618,9 @@
   .skills-block__card {
     width: 50%;
     margin-bottom: 0;
+  }
+
+  .menu__popup {
+    left: -67%;
   }
 }

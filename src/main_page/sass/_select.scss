@@ -1,0 +1,106 @@
+.selectric {
+  background-color: #282828;
+  border: none;
+  // border-bottom: 1px solid rgb(83, 83, 83);
+  // border-bottom: 2px solid rgb(42, 223, 187);
+  outline: none;
+  .label {
+    font-family: GothaB;
+    font-size: pxToRem(24px);
+    margin-left: 0;
+    color: #fff;
+    height: auto;
+    line-height: inherit;
+    position: relative;
+    margin-right: 0;
+    &::after {
+      position: absolute;
+      content: url("img/content/drop-arrow.png");
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.selectric-items {
+  margin-top: .3rem;
+  border: 1px solid #373737;
+}
+
+.selectric-items li {
+  font-family: GothaR;
+  font-size: pxToRem(16px);
+  background-color: #282828;
+  color: #fff;
+  &:hover {
+    background-color: #242424;
+  }
+}
+
+.selectric-items li.highlighted {
+  background-color: #242424;
+  color: #2adfbb;
+}
+
+@media (max-width: 767px) {
+  .selectric-wrapper {
+    width: 65%;
+  }
+
+  .check-container .selectric {
+    padding-bottom: .1rem;
+    .label {
+      height: auto;
+      line-height: inherit;
+      padding-right: 2rem;
+    }
+  }
+  .select-block {
+    .select-container {
+      &:first-of-type {
+        .selectric {
+          width: 117px;
+        }
+      }
+      &:nth-of-type(2) {
+        .selectric {
+          width: 86px;
+        }
+      }
+      &:nth-of-type(3) {
+        .selectric {
+          width: 164px;
+        }
+      }
+      &:nth-of-type(4) {
+        .selectric {
+          width: 262px;
+          padding-right: 4rem;
+          .label {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .selectric-wrapper {
+    width: 82%;
+  }
+
+  .selectric {
+    padding-bottom: .1rem;
+    .label {
+      height: auto;
+      line-height: inherit;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .selectric-wrapper {
+    width: 82%;
+  }
+}
